@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.55"
+           android:background="@drawable/menuback" >
+           
+        <Button
+            android:id="@+id/Button05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/umber"
+            android:onClick="onSelectFragment"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button05"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/feed"
+            android:onClick="onSelectFragment"
+            android:text="@string/accounts"
+            android:textColor="@color/white" 
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button04"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/place"
+            android:onClick="onSelectFragment"
+            android:text="@string/transfer"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button03"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/heart"
+            android:onClick="onSelectFragment"
+            android:text="@string/pay"
+            android:textColor="@color/white" 
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            
+            android:onClick="onSelectFragment"
+             android:drawableTop="@drawable/star"
+            android:drawablePadding="2dip"
+            android:background="@android:color/transparent"
+    
+             />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Button01"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/smile"
+            android:onClick="onSelectFragment"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:drawablePadding="2dip"
+            android:drawableTop="@drawable/side"
+            android:onClick="onSelectFragment"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_first"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+       
+                
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/fragment_second"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+
+</LinearLayout>
